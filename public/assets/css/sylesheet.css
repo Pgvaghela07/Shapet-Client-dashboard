@@ -1,0 +1,38 @@
+.dropdrown{
+    display: flex;
+    width: 100%;
+    margin: 4px 110px;
+    border: 3px solid black;
+    padding: 7px;
+  }
+  .dropdrown label{
+  padding-top: 9px;
+  }
+  #toper{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .measurement{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .measurement h4{
+    text-align: center;
+  }
+  
+  .temp-field{
+    display: flex;
+    justify-content: center;
+  }
+  .temp-field input{
+    display: flex;
+    width: 5vw;
+    height: 5vh;
+    margin: 3px;
+    border-radius: 7px;
+  }
+  .temp-field input{
+    font-size: xx-large;
+    text-align: center;
+  }

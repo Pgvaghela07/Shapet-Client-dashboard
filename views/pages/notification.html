@@ -27,19 +27,8 @@
     <!-- End css -->
 </head>
 <style>
-    .temp-field span {
-        text-align: center;
-        width: 40px;
-        padding: 5px;
-        margin: 8px;
-        background-color: red;
-        color: black;
-        border: 2px solid black;
-        border-radius: 5px;
-    }
-
     .notification-container {
-        background-color: rgb(254, 34, 34);
+        background-color: #f8d7da;
         /* Red color as an example */
         border: 1px solid #f5c6cb;
         /* Border color */
@@ -51,10 +40,11 @@
         /* Rounded corners */
         width: 300px;
         /* Set width as needed */
+        margin: 20px auto;
         /* Center the box horizontally */
         text-align: center;
         /* Center text */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 13px 8px 10px rgba(0, 0, 0, 0.1);
         /* Shadow effect */
     }
 </style>
@@ -129,193 +119,6 @@
         <div class="leftbar">
             <!-- Start Sidebar -->
             <div class="sidebar">
-
-                <div class="topbar-mobile">
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <div class="mobile-logobar">
-                                <a href="index.html" class="mobile-logo"><img src="assets/images/logo.jpg"
-                                        class="img-fluid" alt="logo"></a>
-                            </div>
-                            <div class="mobile-togglebar">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">
-                                        <div class="topbar-toggle-icon">
-                                            <a class="topbar-toggle-hamburger" href="javascript:void();">
-                                                <span class="iconbar">
-                                                    <i class="ri-more-fill menu-hamburger-horizontal"></i>
-                                                    <i class="ri-more-2-fill menu-hamburger-vertical"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <div class="menubar">
-                                            <a class="menu-hamburger" href="javascript:void();">
-                                                <span class="iconbar">
-                                                    <i class="ri-menu-2-line menu-hamburger-collapse"></i>
-                                                    <i class="ri-close-line menu-hamburger-close"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Start Topbar -->
-                <div class="topbar">
-                    <!-- Start row -->
-                    <div class="row align-items-center">
-                        <!-- Start col -->
-                        <div class="col-md-12 align-self-center">
-                            <div class="togglebar">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">
-                                        <div class="menubar">
-                                            <a class="menu-hamburger" href="javascript:void();">
-                                                <span class="iconbar">
-                                                    <i class="ri-menu-2-line menu-hamburger-collapse"></i><i
-                                                        class="ri-close-line menu-hamburger-close"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <div class="searchbar">
-                                            <form>
-                                                <div class="input-group">
-                                                    <input type="search" class="form-control" placeholder="Search"
-                                                        aria-label="Search" aria-describedby="button-addon2">
-                                                    <div class="input-group-append">
-                                                        <button class="btn" type="submit" id="button-addon2"><i
-                                                                class="ri-search-line"></i></button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="infobar">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">
-                                        <div class="languagebar">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" href="#" role="button" id="languagelink"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false"><span class="iconbar iconbar-md"><i
-                                                            class="flag flag-icon-us flag-icon-squared"></i></span></a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="languagelink">
-                                                    <a class="dropdown-item" href="#"><i
-                                                            class="flag flag-icon-us flag-icon-squared"></i>English</a>
-                                                    <a class="dropdown-item" href="#"><i
-                                                            class="flag flag-icon-de flag-icon-squared"></i>German</a>
-                                                    <a class="dropdown-item" href="#"><i
-                                                            class="flag flag-icon-bl flag-icon-squared"></i>France</a>
-                                                    <a class="dropdown-item" href="#"><i
-                                                            class="flag flag-icon-ru flag-icon-squared"></i>Russian</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <div class="settingbar">
-                                            <a href="javascript:void(0)" id="infobar-settings-open"
-                                                class="infobar-icon">
-                                                <span class="iconbar"><i class="ri-settings-3-line"></i></span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <div class="notifybar">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle infobar-icon" href="#" role="button"
-                                                    id="notoficationlink" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    <span class="iconbar"><i class="ri-notification-3-line"></i><span
-                                                            class="live-icon"></span></span>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="notoficationlink">
-                                                    <div class="notification-dropdown-title">
-                                                        <h5>Notifications<a href="#">Clear all</a></h5>
-                                                    </div>
-                                                    <ul class="list-unstyled">
-                                                        <li class="media dropdown-item">
-                                                            <span class="action-icon badge badge-primary"><i
-                                                                    class="ri-archive-line"></i></span>
-                                                            <div class="media-body">
-                                                                <h5 class="action-title">Product Added</h5>
-                                                                <p><span class="timing">Today, 08:40 AM</span></p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="media dropdown-item">
-                                                            <span class="action-icon badge badge-success"><i
-                                                                    class="ri-price-tag-3-line"></i></span>
-                                                            <div class="media-body">
-                                                                <h5 class="action-title">Sale Started</h5>
-                                                                <p><span class="timing">Today, 03:45 PM</span></p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="media dropdown-item">
-                                                            <span class="action-icon badge badge-warning"><i
-                                                                    class="ri-file-text-line"></i></span>
-                                                            <div class="media-body">
-                                                                <h5 class="action-title">Kelly Reported</h5>
-                                                                <p><span class="timing">5 June 2020, 02:20 PM</span></p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="media dropdown-item">
-                                                            <span class="action-icon badge badge-danger"><i
-                                                                    class="ri-file-user-line"></i></span>
-                                                            <div class="media-body">
-                                                                <h5 class="action-title">John Resigned</h5>
-                                                                <p><span class="timing">2 June 2020, 11:11 AM</span></p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="notification-dropdown-footer">
-                                                        <h5><a href="#">See all</a></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <div class="profilebar">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" href="#" role="button" id="profilelink"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false"><img src="assets/images/users/profile.svg"
-                                                        class="img-fluid" alt="profile"><span class="live-icon">John
-                                                        D</span></a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="profilelink">
-                                                    <a class="dropdown-item" href="#"><i class="ri-user-6-line"></i>My
-                                                        Profile</a>
-                                                    <a class="dropdown-item" href="#"><i
-                                                            class="ri-mail-line"></i>Email</a>
-                                                    <a class="dropdown-item" href="#"><i
-                                                            class="ri-settings-3-line"></i>Settings</a>
-                                                    <a class="dropdown-item text-danger" href="#"><i
-                                                            class="ri-shut-down-line"></i>Logout</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End col -->
-                    </div>
-                    <!-- End row -->
-                </div>
-
-
-
                 <!-- Start Logobar -->
                 <div class="logobar">
                     <a href="index.html" class="logo logo-large"><img src="assets/images/logo.jpg" class="img-fluid"
@@ -379,14 +182,371 @@
             <!-- End Sidebar -->
         </div>
         <!-- End Leftbar -->
-        <!-- Start Rightbar -->
+        <div class="topbar-mobile">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="mobile-logobar">
+                        <a href="index.html" class="mobile-logo"><img src="assets/images/logo.jpg" class="img-fluid"
+                                alt="logo"></a>
+                    </div>
+                    <div class="mobile-togglebar">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <div class="topbar-toggle-icon">
+                                    <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                        <span class="iconbar">
+                                            <i class="ri-more-fill menu-hamburger-horizontal"></i>
+                                            <i class="ri-more-2-fill menu-hamburger-vertical"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="menubar">
+                                    <a class="menu-hamburger" href="javascript:void();">
+                                        <span class="iconbar">
+                                            <i class="ri-menu-2-line menu-hamburger-collapse"></i>
+                                            <i class="ri-close-line menu-hamburger-close"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Topbar -->
+        <div class="topbar">
+            <!-- Start row -->
+            <div class="row align-items-center">
+                <!-- Start col -->
+                <div class="col-md-12 align-self-center">
+                    <div class="togglebar">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <div class="menubar">
+                                    <a class="menu-hamburger" href="javascript:void();">
+                                        <span class="iconbar">
+                                            <i class="ri-menu-2-line menu-hamburger-collapse"></i><i
+                                                class="ri-close-line menu-hamburger-close"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="searchbar">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search"
+                                                aria-label="Search" aria-describedby="button-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn" type="submit" id="button-addon2"><i
+                                                        class="ri-search-line"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="infobar">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <div class="languagebar">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" id="languagelink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                                class="iconbar iconbar-md"><i
+                                                    class="flag flag-icon-us flag-icon-squared"></i></span></a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languagelink">
+                                            <a class="dropdown-item" href="#"><i
+                                                    class="flag flag-icon-us flag-icon-squared"></i>English</a>
+                                            <a class="dropdown-item" href="#"><i
+                                                    class="flag flag-icon-de flag-icon-squared"></i>German</a>
+                                            <a class="dropdown-item" href="#"><i
+                                                    class="flag flag-icon-bl flag-icon-squared"></i>France</a>
+                                            <a class="dropdown-item" href="#"><i
+                                                    class="flag flag-icon-ru flag-icon-squared"></i>Russian</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="settingbar">
+                                    <a href="javascript:void(0)" id="infobar-settings-open" class="infobar-icon">
+                                        <span class="iconbar"><i class="ri-settings-3-line"></i></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="notifybar">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle infobar-icon" href="#" role="button"
+                                            id="notoficationlink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <span class="iconbar"><i class="ri-notification-3-line"></i><span
+                                                    class="live-icon"></span></span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right"
+                                            aria-labelledby="notoficationlink">
+                                            <div class="notification-dropdown-title">
+                                                <h5>Notifications<a href="#">Clear all</a></h5>
+                                            </div>
+                                            <ul class="list-unstyled">
+                                                <li class="media dropdown-item">
+                                                    <span class="action-icon badge badge-primary"><i
+                                                            class="ri-archive-line"></i></span>
+                                                    <div class="media-body">
+                                                        <h5 class="action-title">Product Added</h5>
+                                                        <p><span class="timing">Today, 08:40 AM</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="media dropdown-item">
+                                                    <span class="action-icon badge badge-success"><i
+                                                            class="ri-price-tag-3-line"></i></span>
+                                                    <div class="media-body">
+                                                        <h5 class="action-title">Sale Started</h5>
+                                                        <p><span class="timing">Today, 03:45 PM</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="media dropdown-item">
+                                                    <span class="action-icon badge badge-warning"><i
+                                                            class="ri-file-text-line"></i></span>
+                                                    <div class="media-body">
+                                                        <h5 class="action-title">Kelly Reported</h5>
+                                                        <p><span class="timing">5 June 2020, 02:20 PM</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="media dropdown-item">
+                                                    <span class="action-icon badge badge-danger"><i
+                                                            class="ri-file-user-line"></i></span>
+                                                    <div class="media-body">
+                                                        <h5 class="action-title">John Resigned</h5>
+                                                        <p><span class="timing">2 June 2020, 11:11 AM</span></p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="notification-dropdown-footer">
+                                                <h5><a href="#">See all</a></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="profilebar">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" id="profilelink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                                src="assets/images/users/profile.svg" class="img-fluid"
+                                                alt="profile"><span class="live-icon">John
+                                                D</span></a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profilelink">
+                                            <a class="dropdown-item" href="#"><i class="ri-user-6-line"></i>My
+                                                Profile</a>
+                                            <a class="dropdown-item" href="#"><i class="ri-mail-line"></i>Email</a>
+                                            <a class="dropdown-item" href="#"><i
+                                                    class="ri-settings-3-line"></i>Settings</a>
+                                            <a class="dropdown-item text-danger" href="#"><i
+                                                    class="ri-shut-down-line"></i>Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End row -->
+        </div>
         <div class="rightbar">
-            <!-- Start Topbar Mobile -->
-
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="index.html" class="mobile-logo"><img src="assets/images/logo.jpg" class="img-fluid"
+                                    alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <span class="iconbar">
+                                                <i class="ri-more-fill menu-hamburger-horizontal"></i>
+                                                <i class="ri-more-2-fill menu-hamburger-vertical"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <span class="iconbar">
+                                                <i class="ri-menu-2-line menu-hamburger-collapse"></i>
+                                                <i class="ri-close-line menu-hamburger-close"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Topbar -->
+            <div class="topbar">
+                <!-- Start row -->
+                <div class="row align-items-center">
+                    <!-- Start col -->
+                    <div class="col-md-12 align-self-center">
+                        <div class="togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <span class="iconbar">
+                                                <i class="ri-menu-2-line menu-hamburger-collapse"></i><i
+                                                    class="ri-close-line menu-hamburger-close"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="searchbar">
+                                        <form>
+                                            <div class="input-group">
+                                                <input type="search" class="form-control" placeholder="Search"
+                                                    aria-label="Search" aria-describedby="button-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn" type="submit" id="button-addon2"><i
+                                                            class="ri-search-line"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infobar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="languagebar">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" href="#" role="button" id="languagelink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                                    class="iconbar iconbar-md"><i
+                                                        class="flag flag-icon-us flag-icon-squared"></i></span></a>
+                                            <div class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="languagelink">
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="flag flag-icon-us flag-icon-squared"></i>English</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="flag flag-icon-de flag-icon-squared"></i>German</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="flag flag-icon-bl flag-icon-squared"></i>France</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="flag flag-icon-ru flag-icon-squared"></i>Russian</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="settingbar">
+                                        <a href="javascript:void(0)" id="infobar-settings-open" class="infobar-icon">
+                                            <span class="iconbar"><i class="ri-settings-3-line"></i></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="notifybar">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle infobar-icon" href="#" role="button"
+                                                id="notoficationlink" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <span class="iconbar"><i class="ri-notification-3-line"></i><span
+                                                        class="live-icon"></span></span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="notoficationlink">
+                                                <div class="notification-dropdown-title">
+                                                    <h5>Notifications<a href="#">Clear all</a></h5>
+                                                </div>
+                                                <ul class="list-unstyled">
+                                                    <li class="media dropdown-item">
+                                                        <span class="action-icon badge badge-primary"><i
+                                                                class="ri-archive-line"></i></span>
+                                                        <div class="media-body">
+                                                            <h5 class="action-title">Product Added</h5>
+                                                            <p><span class="timing">Today, 08:40 AM</span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="media dropdown-item">
+                                                        <span class="action-icon badge badge-success"><i
+                                                                class="ri-price-tag-3-line"></i></span>
+                                                        <div class="media-body">
+                                                            <h5 class="action-title">Sale Started</h5>
+                                                            <p><span class="timing">Today, 03:45 PM</span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="media dropdown-item">
+                                                        <span class="action-icon badge badge-warning"><i
+                                                                class="ri-file-text-line"></i></span>
+                                                        <div class="media-body">
+                                                            <h5 class="action-title">Kelly Reported</h5>
+                                                            <p><span class="timing">5 June 2020, 02:20 PM</span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="media dropdown-item">
+                                                        <span class="action-icon badge badge-danger"><i
+                                                                class="ri-file-user-line"></i></span>
+                                                        <div class="media-body">
+                                                            <h5 class="action-title">John Resigned</h5>
+                                                            <p><span class="timing">2 June 2020, 11:11 AM</span></p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="notification-dropdown-footer">
+                                                    <h5><a href="#">See all</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="profilebar">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" href="#" role="button" id="profilelink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                                    src="assets/images/users/profile.svg" class="img-fluid"
+                                                    alt="profile"><span class="live-icon">John
+                                                    D</span></a>
+                                            <div class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="profilelink">
+                                                <a class="dropdown-item" href="#"><i class="ri-user-6-line"></i>My
+                                                    Profile</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-mail-line"></i>Email</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="ri-settings-3-line"></i>Settings</a>
+                                                <a class="dropdown-item text-danger" href="#"><i
+                                                        class="ri-shut-down-line"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End row -->
+            </div>
             <!-- End Topbar -->
 
             <main id="main" class="main"
-                style="align-items: center; justify-content: center; display: flex; flex-direction: column; margin: 85px;">
+                style="align-items: center; justify-content: center; display: flex; flex-direction: column; margin-top: 140px;">
                 <div class="notification-container">
                     <p>Your machine temperature is high please check your machine</p>
                 </div>
@@ -459,125 +619,6 @@
     <script src="assets/plugins/d3/d3.min.js"></script>
     <script src="assets/plugins/c3/c3.min.js"></script>
     <script src="assets/js/custom/custom-chart-c3.js"></script>
-
-    <script>
-        // Function to generate a random number and add it to the table
-        function generateRandomNumber1() {
-            var randomNumber = Math.floor(Math.random() * 1300 + 1); // Generates a random number between 1 and 100
-            var r1 = document.getElementById('r1');
-            r1.innerText = randomNumber;
-            function showNotification() {
-                const notification = new Notification("Your Machine Temperature is high! Please check your machine.", {
-                    icon: 'https://img.icons8.com/material/2x/alert-triangle-ring.png'
-                });
-            }
-            if (Notification.permission === 'granted') {
-
-            } else if (Notification.permission !== 'denied') {
-                Notification.requestPermission().then(permission => {
-                    if (permission === 'granted') {
-                        showNotification();
-                    }
-                });
-            }
-            if (randomNumber >= 1200) {
-                showNotification();
-            }
-        }
-        generateRandomNumber1();
-
-
-
-        function generateRandomNumber2() {
-            var randomNumber = Math.floor(Math.random() * 100 + 1);
-            var r2 = document.getElementById('r2');
-            r2.innerText = randomNumber;
-        }
-        generateRandomNumber2();
-        function generateRandomNumber3() {
-            var randomNumber = Math.floor(Math.random() * 50 + 1);
-            var r3 = document.getElementById('r3');
-            r3.innerText = randomNumber;
-        }
-        generateRandomNumber3();
-        function generateRandomNumber4() {
-            var randomNumber = Math.floor(Math.random() * 50 + 1);
-            var r4 = document.getElementById('r4');
-            r4.innerText = randomNumber;
-        }
-        generateRandomNumber4();
-        // Generate a random number initially
-
-        // Continuously generate random numbers at intervals
-        setInterval(generateRandomNumber1, 1000); // Change 1000 to desired interval in milliseconds
-        setInterval(generateRandomNumber2, 1000); // Change 1000 to desired interval in milliseconds
-        setInterval(generateRandomNumber3, 1000); // Change 1000 to desired interval in milliseconds
-        setInterval(generateRandomNumber4, 1000); // Change 1000 to desired interval in milliseconds
-
-        function generateRandomNumber5() {
-            var randomNumber = Math.floor(Math.random() * 800 + 1);
-            var d1 = document.getElementById('d1');
-            d1.innerText = randomNumber;
-        }
-        generateRandomNumber5();
-        setInterval(generateRandomNumber5, 1000); // Change 1000 to desired interval in milliseconds
-
-
-        function generateRandomNumber6() {
-            var randomNumber = Math.floor(Math.random() * 100 + 1);
-            var c1 = document.getElementById('c1');
-            c1.innerText = randomNumber;
-        }
-        generateRandomNumber6();
-        setInterval(generateRandomNumber6, 1000); // Change 1000 to desired interval in milliseconds
-
-
-        function generateRandomNumber7() {
-            var randomNumber = Math.floor(Math.random() * 20 + 1);
-            var c2 = document.getElementById('c2');
-            c2.innerText = randomNumber;
-        }
-        generateRandomNumber7();
-        setInterval(generateRandomNumber7, 1000); // Change 1000 to desired interval in milliseconds
-
-    </script>
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notification Boxes</title>
-    <style>
-        .notification-container {
-            background-color: #f8d7da;
-            /* Red color as an example */
-            border: 1px solid #f5c6cb;
-            /* Border color */
-            color: #721c24;
-            /* Text color */
-            padding: 10px;
-            /* Padding around the content */
-            border-radius: 5px;
-            /* Rounded corners */
-            width: 300px;
-            /* Set width as needed */
-            margin: 20px auto;
-            /* Center the box horizontally */
-            text-align: center;
-            /* Center text */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* Shadow effect */
-        }
-    </style>
-</head>
-
-<body>
 
 </body>
 

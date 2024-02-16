@@ -1,7 +1,6 @@
 .dropdrown{
     display: flex;
     width: 100%;
-    margin: 4px 110px;
     border: 3px solid black;
     padding: 7px;
   }
@@ -12,18 +11,26 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .measurement{
-    padding: 10px;
+  .measurements{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
   }
-  .measurement h4{
+  .measurements h4{
     text-align: center;
+    border-bottom: 2px solid black;
   }
   
   .temp-field{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    font-size: 0.8rem;
+    border: 2px solid black;
+    margin: 5px;
   }
   .temp-field input{
     display: flex;
@@ -35,4 +42,12 @@
   .temp-field input{
     font-size: xx-large;
     text-align: center;
+  }
+
+  .measurement{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
   }
